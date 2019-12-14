@@ -1,7 +1,14 @@
+@charset "UTF-8";
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
 }
+
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+margin: 0; 
+padding: 0; 
+text-align: center;
+} 
 
 .hidden {
 	display: none;
@@ -10,23 +17,27 @@ body {
 .bodyCon {
 	width: 960px;
 	color: white;
-	text-align: center;
 	margin: 0 auto;
-	padding: center;
+}
+
+.bodyCon h2 {
+	font-size: 20px;
+}
+
+.bodyCon h3 {
+	font-size: 18px;
 }
 
 .mainHeader {
 	width: 960px;
 	height: 100px;
-	margin: 10px 10px 20px 0px;
+	margin: 20px 0px 30px 0px;
 }
 
 .subNav {
     width: 290px;
     height: 40px;
     background-color: #555434;
-    color: white;
-    text-align: center;
 }
 
 .mainNav {
@@ -34,16 +45,12 @@ body {
 	height: 45px;
 	margin: 15px 0px 0px 0px;
 	background-color: #23550b;
-	color: white;
-	text-align: center;
 }
 
 .logo {
 	width: 250px;
 	height: 100px;
 	background-color: #f0aeae;
-	color: white;
-	text-align: center;
     float: right;
 }
 
@@ -53,9 +60,7 @@ body {
 .hero {
 	width: 960px;
 	height: 300px;
-	margin: 20px 0px 20px 0px;
-	color: white;
-	text-align: center;
+	margin: 30px 0px;
 }
 
 .mainImage {
@@ -81,21 +86,21 @@ body {
 	width: 960px;
 	height: 400px;
 	margin-top: 20px;
+	margin-bottom: 45px;
 }
 
 #snsArea {
-	width: 340px;
+	width: 330px;
 	height: 50px;
-	padding-right: 20px;
 	margin-bottom: 40px;
 	display: flex;
+	justify-content: space-between;
 }
 
 .snsbox {
 	background-color: #e0b1cf;
 	width: 100px;
 	height: 50px;
-	margin-right: 20px;
 }
 
 .promoText {
@@ -109,8 +114,8 @@ body {
 	width: 580px;
 	height: 400px;
 	float: right;
+	vertical-align: middle;
 }
-
 
 /*-- Close Main Section --*/
 
@@ -124,5 +129,8 @@ body {
 	margin: 0 auto;
 	padding: center;
 	color: white;
-	text-align: center;
+}
+
+.footer h2 {
+	font-size: 20px
 }
